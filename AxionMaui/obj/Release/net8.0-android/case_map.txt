@@ -1,0 +1,8 @@
+images\bebidas;images\bebidas
+images\cart_icon;images\cart_icon
+images\categories_icon;images\categories_icon
+images\delivery_logo;images\delivery_logo
+images\dotnet_bot;images\dotnet_bot
+images\home_icon;images\home_icon
+images\menu_icon;images\menu_icon
+raw\aboutassets;raw\AboutAssets

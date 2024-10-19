@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@2x.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@3x.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\bebidas.jpg" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\cart_icon.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\categories_icon.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\delivery_logo.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\home_icon.png" />
+    <BundleResource Include="C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\menu_icon.png" />
+  </ItemGroup>
+</Project>

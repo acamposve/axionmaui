@@ -1,0 +1,5 @@
+C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Debug\net6.0-android\AxionMaui.csproj.AssemblyReference.cache
+C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Debug\net6.0-android\AxionMaui.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Debug\net6.0-android\AxionMaui.AssemblyInfoInputs.cache
+C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Debug\net6.0-android\AxionMaui.AssemblyInfo.cs
+C:\Users\a.campos\source\repos\AxionMaui\AxionMaui\obj\Debug\net6.0-android\AxionMaui.csproj.CoreCompileInputs.cache

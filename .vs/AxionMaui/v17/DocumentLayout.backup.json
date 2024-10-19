@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\a.campos\\source\\repos\\AxionMaui\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{234B3A78-63D9-44B5-B5CC-EA7E8F0B284E}|AxionMaui\\AxionMaui.csproj|c:\\users\\a.campos\\source\\repos\\axionmaui\\axionmaui\\axionmaui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{234B3A78-63D9-44B5-B5CC-EA7E8F0B284E}|AxionMaui\\AxionMaui.csproj|solutionrelative:axionmaui\\axionmaui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AxionMaui",
+              "DocumentMoniker": "C:\\Users\\a.campos\\source\\repos\\AxionMaui\\AxionMaui\\AxionMaui.csproj",
+              "RelativeDocumentMoniker": "AxionMaui\\AxionMaui.csproj",
+              "ToolTip": "C:\\Users\\a.campos\\source\\repos\\AxionMaui\\AxionMaui\\AxionMaui.csproj",
+              "RelativeToolTip": "AxionMaui\\AxionMaui.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-19T11:54:59.016Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

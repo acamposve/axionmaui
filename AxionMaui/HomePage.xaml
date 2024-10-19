@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AxionMaui.HomePage"
+             Title="HomePage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!-- Linea 1: Iconos de menu, logo de Axion y carrito de compras -->
+            <Grid Padding="10" HorizontalOptions="FillAndExpand">
+                <!-- Definición de columnas para la primera fila -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <!-- Fila para los íconos -->
+                    <RowDefinition Height="1" />
+                    <!-- Fila para la línea separadora -->
+                    <RowDefinition Height="Auto" />
+                    <!-- Fila para el texto del cliente -->
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna izquierda para el menú -->
+                    <ColumnDefinition Width="Auto" />
+                    <!-- Columna central para el logo -->
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna derecha para el carrito -->
+                </Grid.ColumnDefinitions>
+
+                <!-- Icono de menú alineado a la izquierda -->
+                <Image Source="menu_icon.png" WidthRequest="24" HeightRequest="24" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                <!-- Logo de Axion alineado al centro -->
+                <Image Source="axion_logo.png" WidthRequest="50" HeightRequest="50" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <!-- Icono del carrito alineado a la derecha -->
+                <Image Source="cart_icon.png" WidthRequest="24" HeightRequest="24" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
+
+                <!-- Línea separadora en la segunda fila que se extiende a través de las tres columnas -->
+                <BoxView Grid.Row="1" BackgroundColor="#D1117E" HeightRequest="1" Grid.ColumnSpan="3"/>
+
+                <!-- Texto del cliente en la tercera fila -->
+                <Label Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Hola, " TextColor="Black"/>
+                            <Span Text="{Binding FullName}" TextColor="#D1117E"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+
+            <!-- Linea 4: Imagen de categorias -->
+            <Image Source="bebidas.jpg" Aspect="AspectFill" HorizontalOptions="Center" Margin="10"/>
+
+            <!-- Linea 5: Texto de Categorias y botón "Ver más" -->
+            <Grid ColumnDefinitions="*,Auto" Padding="10" HorizontalOptions="FillAndExpand">
+                <!-- Texto "Categorías" alineado a la izquierda -->
+                <Label Text="Categorías" FontSize="Medium" TextColor="Black" VerticalOptions="Center" Grid.Column="0" />
+
+                <!-- Botón "Ver más" alineado a la derecha -->
+                <Button Text="Ver más" Clicked="OnViewCategoriesClicked" HorizontalOptions="End" Grid.Column="1" />
+            </Grid>
+
+            <!-- Linea 6: Cuatro imágenes de productos con nombres -->
+            <CollectionView ItemsSource="{Binding Products}" Margin="10">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="4" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <!-- Imagen del producto -->
+                            <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="100" WidthRequest="100"/>
+                            <!-- Nombre del producto -->
+                            <Label Text="{Binding Name}" VerticalOptions="End" HorizontalOptions="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Fila para el título -->
+                    <RowDefinition Height="*"/>
+                    <!-- Fila para el espacio en blanco -->
+                    <RowDefinition Height="*"/>
+                    <!-- Fila para el CollectionView -->
+                </Grid.RowDefinitions>
+
+                <!-- Fila 1: Título "Destacados" -->
+                <Label Text="{Binding FeaturedLabel}" FontSize="Medium" TextColor="#D1117E" Margin="0,5" Grid.Row="0"/>
+
+                <!-- Fila 2: Espacio en blanco -->
+                <BoxView Grid.Row="1" HeightRequest="20"/>
+                <!-- Ajusta la altura según lo que necesites -->
+
+                <!-- Fila 3: CollectionView -->
+                <CollectionView ItemsSource="{Binding FeaturedProducts}" Grid.Row="2">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"/>
+                        <!-- Cambiar a Horizontal -->
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout Margin="0,5">
+                                <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="100" WidthRequest="100"/>
+                                <Label Text="{Binding Name}" FontSize="Small"/>
+                                <Label Text="{Binding Description}" FontSize="Small"/>
+                                <Label Text="{Binding Price, StringFormat='${0:F2}'}" FontSize="Small" FontAttributes="Bold"/>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+            <Grid Padding="10" VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna izquierda -->
+                    <ColumnDefinition Width="Auto" />
+                    <!-- Columna del centro -->
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna derecha -->
+                </Grid.ColumnDefinitions>
+
+                <!-- Icono de inicio alineado a la izquierda -->
+                <Image Source="home_icon.png" WidthRequest="24" HeightRequest="24" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                <!-- Icono de categorías alineado al centro -->
+                <Image Source="categories_icon.png" WidthRequest="24" HeightRequest="24" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <!-- Icono de entrega alineado a la derecha -->
+                <Image Source="delivery_logo.png" WidthRequest="24" HeightRequest="24" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
